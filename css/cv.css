@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+	margin: 0;
+	padding: 0;
+	background: #111111 url(../photo/bg.jpg) center bottom;		/*https://pixabay.com/en/night-photograph-starry-sky-2183637/*/
+	color: #FFF9FF;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+.big{
+	display: flex;
+	width: 95%;
+	margin: 0 2%;
+	border-radius: 4%;
+	background: #3179ed;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.photo{
+	width: 30%;
+}
+.photo img{
+	width: 90%;
+	margin: 2% 5%;
+	border-radius: 5%;
+}
+.detail{
+
+	width: 35%;
+	background: transparent;
+}
+h3{
+
+	text-decoration: underline;
+	text-align: center;
+}
+
+table{
+	border: none;
+	width: 80%;
+	display: flex;
+	margin-left: 20%;
+}
+.skill{
+	width: 95%;
+	margin: 0 2%;
+	border-radius: 4%;
+	background: #3179ed;
+	min-height: 130px;
+}
+.skill h3{
+	text-align: center;
+}
+.skill ul{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 2% 0;
+	padding: 0;
+	list-style: none;
+}
+.skill ul li{
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	font-weight: 600;
+	align-self: center;
+	padding: 15px 20px;
+	color: white;
+	background-color: green;
+	border-radius: 40% 30%;
+	box-shadow: 5px 5px lightblue;
+}
+@media screen and (max-width: 750px){
+	.big{
+		display: flex;
+		flex-direction: column;
+		width: 96%;
+		margin: 1%;
+	}
+	.photo{
+		width: 100%;
+	}
+	.skill{
+		display: flex;
+		align-self: center;
+		border-radius: 1%;
+		flex-direction: column;
+	}
+	.skill h3{
+		width: 100%;
+	}
+	.skill ul{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	}
+	.skill ul li{
+	display: flex;
+	width: 35%;
+	border-radius: 20%;
+	}
+	/*nav ul{
+		flex-direction: column;
+	}
+	nav ul li{
+		width: 96%;
+		margin: 1%;
+		padding: 1%;
+	}
+	.skill ul li a{
+		width: 100%;
+	}
+	nav ul img{
+		margin-left: 35%;
+	}*/
+}

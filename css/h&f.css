@@ -1,0 +1,143 @@
+
+/* the css for header and footer for all pages, since all have same type of style*/
+
+
+header{																/*header starts*/
+	text-align: center;
+	width: 98%;
+	margin: 10px 1% 5px;
+	display: flex;
+}
+
+nav{
+	background-color: transparent;
+	margin-bottom: 0;
+	width: 100%;
+	height: 100%;
+
+}
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul img{																/*logo image*/
+	height: 85px;
+	width: 85px;
+}
+nav ul li{
+	display: flex;
+	flex-direction: row;
+	font-size: 1rem;
+	font-weight: 600;
+	align-self: center;
+}
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
+	color: #FFF999;
+	background-color: blue;
+	border-radius: 10%;
+	box-shadow: 5px 5px lightblue;
+}
+nav ul li a:hover{
+	background-color: black;
+	color: #999FFF;
+	border-radius: 20%;
+	box-shadow: 15px 5px lightblue;
+}
+.moving{							/*animation*/
+	background-color: red;
+	position: relative;
+	animation-name: movement;
+	animation-duration: 8s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+@keyframes movement{
+	 0%   {background-color:orange;}
+    25%  {background-color:pink; 
+   		 transform: rotate(90deg); border-radius: 12%;}
+    50%  {background-color:blue;
+    	transform: rotate(180deg); border-radius: 25%;}
+    75%  {background-color:green; ;
+    	transform: rotate(270deg);border-radius: 37%;}
+    100% {background-color:red;
+   	 	transform: rotate(360deg);border-radius: 50%;}
+}
+
+
+footer{																			/* footer part here*/
+	width: 98%;
+	margin: 10px 1% 5px;
+	padding: 0;
+	display: flex;
+	/*text-align: center;*/
+	color: white;
+}
+
+footer .foot{																	/* division within footer*/
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	line-height: 1.2rem;
+	font-size: 1.2rem;
+
+}
+
+footer .foot li{
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 20px;
+	padding: 0;
+}
+
+footer .foot li a{
+	text-decoration: none;
+	display: block;
+	padding: 15px 20px;
+	color: #FFF999;
+	background-color: blue;
+	border-radius: 10%;
+	box-shadow: 5px 5px lightblue;
+
+}
+footer .foot li a:hover{
+	background-color: black;
+	color: #999FFF;
+	box-shadow: 15px 5px lightblue;
+}
+
+@media only screen and (max-width:750px){
+	nav ul{
+		flex-direction: column;
+	}
+	nav ul li{
+		width: 96%;
+		margin: 1%;
+		padding: 1%;
+	}
+	nav ul li a{
+		width: 100%;
+	}
+	nav ul img{
+		margin-left: 35%;
+	}
+	footer{
+		flex-direction: column;
+
+	}
+	footer .foot{
+		width: 100%;
+	}
+	footer .foot ul li{
+		 width:96%;
+		margin: 1%;
+		padding: 1% 1% 1% 0;
+		flex-direction: column;
+	}
+
+}
